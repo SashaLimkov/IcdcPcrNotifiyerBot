@@ -1,0 +1,48 @@
+ONLY_EMPLOYEE = "Не забудьте заполнить описание до {after_two_hours} для {patient_id} {patient_name}"
+EMPLOYEE_AND_HEAD = {
+    "employee": "Вы не заполнили описание для {patient_id} {patient_name} взятый в {datetime_get}.\n"
+                "{head} уведомлен/а об этом",
+    "head": "Ваш сотрудник {name} не заполнил описание для {patient_id} {patient_name} взятый в {datetime_get}."
+}
+
+EMPLOYEE_AND_HEAD_AND_EPID = {
+    "employee": "Вы не заполнили описание для {patient_id} {patient_name} взятый в {datetime_get}.\n"
+                "{epid} {head} уведомлены об этом",
+    "head": "Ваш сотрудник {name} не заполнил описание для {patient_id} {patient_name} взятый в {datetime_get}.\n"
+            "{epid} уведомлен/а об этом.",
+    "epid": "Сотрудник {name} из отдела {department} не заполнил описание для взятого анализа",
+}
+
+EMPLOYEE_AND_HEAD_AND_EPID_AND_MD = {
+    "employee": "Вы не заполнили описание для {patient_id} {patient_name} взятый в {datetime_get}.\n"
+                "{md}, {epid} и  {head} уведомлены об этом",
+    "head": "Ваш сотрудник {name} не заполнил описание для {patient_id} {patient_name} взятый в {datetime_get}.\n"
+            "{md} и {head} уведомлен/а об этом.",
+    "epid": "Сотрудник {name} из отдела {department} не заполнил описание для взятого анализа\n"
+            "{md} уведомлен об этом",
+    "md": "Сотрудник {name} из отдела {department} не заполнил описание для взятого анализа"
+}
+ALREADY_AUTH = "Данная ссылка уже использована другим сотрудником."
+WELCOME = "Здравствуйте, {name}!"
+STATISTICS = {
+    "Сотрудник": "Ваш отдел: <b>{department}</b>\n"
+                 "Всего записей: {total_count}\n"
+                 "Просроченных записей: <b>{lost_deadline_count}</b>\n"
+                 "<b>Незаполненны в текущий момент: {not_filled}</b>\n",
+    "Глава отдела": "Отдел: <b>{department}</b>\n"
+                    "Всего записей: {total_count}\n"
+                    "Просроченных записей: <b>{lost_deadline_count}</b>\n"
+                    "<b>Незаполненны в текущий момент: {not_filled}</b>\n",
+    "Эпидемиолог": "Отдел: <b>{department}</b>\n"
+                   "    Всего записей: {total_count}\n"
+                   "    Просроченных записей: <b>{lost_deadline_count}</b>\n"
+                   "    <b>Незаполненны в текущий момент: {not_filled}</b>\n",
+    "ЗГД": "Отдел: <b>{department}</b>\n"
+           "    Всего записей: {total_count}\n"
+           "    Просроченных записей: <b>{lost_deadline_count}</b>\n"
+           "    <b>Незаполненны в текущий момент: {not_filled}</b>\n",
+}
+
+TOTAL_STAT = "Всего записей: {total_count}\n" \
+             "Просроченных записей: <b>{lost_deadline_count}</b>\n" \
+             "<b>Незаполненны в текущий момент: {not_filled}</b>\n"

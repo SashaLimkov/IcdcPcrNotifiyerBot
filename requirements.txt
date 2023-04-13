@@ -1,0 +1,6 @@
+python-dotenv
+django
+aiogram
+psycopg2-binary
+apscheduler
+django-ninja
